@@ -1,6 +1,11 @@
+import Header from "@/components/layout/Header"
 
 const User: React.FC = () => {
-    return (<></>)
+    return (
+        <>
+            <Header />
+        </>
+    )
 }
 
 export default User

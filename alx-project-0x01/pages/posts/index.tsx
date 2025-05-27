@@ -1,6 +1,11 @@
+import Header from "@/components/layout/Header"
 
 const Post: React.FC = () => {
-    return (<></>)
+    return (
+        <>
+            <Header />
+        </>
+    )
 }
 
 export default Post

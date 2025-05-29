@@ -1,7 +1,6 @@
 /* eslint-env node */
-const path = require('path')
-const formatCommand = 'prettier . --check'
 
 module.exports = {
-    '*': formatCommand,
+    '**/*.{js,jsx,ts,tsx}': ['prettier --write'],
+    '**/*.{json,md,css,scss}': ['prettier --write'],
 }

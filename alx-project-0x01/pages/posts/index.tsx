@@ -11,7 +11,7 @@ const Posts: React.FC<PostPageProps> = ({ posts }) => {
         <div className='flex h-screen flex-col'>
             <Header />
             <main className='p-4'>
-                <div className='flex justify-between'>
+                <div className='mx-6 flex justify-between'>
                     <h1 className='text-2xl font-semibold'>Post Content</h1>
                     <button className='rounded-full bg-blue-700 px-4 py-2 text-white'>
                         Add Post

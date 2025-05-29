@@ -34,3 +34,9 @@ export interface Company {
     catchPhrase: string
     bs: string
 }
+
+export interface UserCardItemProps {
+    title: string
+    value: string
+    link?: string
+}

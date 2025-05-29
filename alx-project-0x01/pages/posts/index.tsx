@@ -1,9 +1,9 @@
-import PostCard from '@/components/common/PostCard'
-import Header from '@/components/layout/Header'
-import { PostProps } from '@/interfaces'
+import PostCard from '@/components/common/PostCard';
+import Header from '@/components/layout/Header';
+import { PostProps } from '@/interfaces';
 
 interface PostPageProps {
-    posts: PostProps[]
+    posts: PostProps[];
 }
 
 const Posts: React.FC<PostPageProps> = ({ posts }) => {
@@ -35,18 +35,18 @@ const Posts: React.FC<PostPageProps> = ({ posts }) => {
                 </div>
             </main>
         </div>
-    )
-}
+    );
+};
 
 export async function getStaticProps() {
-    const response = await fetch('https://jsonplaceholder.typicode.com/posts')
-    const posts = await response.json()
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+    const posts = await response.json();
 
     return {
         props: {
             posts,
         },
-    }
+    };
 }
 
-export default Posts
+export default Posts;

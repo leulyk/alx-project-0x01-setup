@@ -1,4 +1,4 @@
-import Header from '@/components/layout/Header'
+import Header from '@/components/layout/Header';
 
 const Home: React.FC = () => {
     return (
@@ -19,7 +19,7 @@ const Home: React.FC = () => {
                 </div>
             </main>
         </div>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;

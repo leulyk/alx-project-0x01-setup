@@ -1,4 +1,4 @@
-import { UserCardItemProps } from '@/interfaces'
+import { UserCardItemProps } from '@/interfaces';
 
 const UserCardItem: React.FC<UserCardItemProps> = ({ title, value, link }) => {
     return (
@@ -7,7 +7,7 @@ const UserCardItem: React.FC<UserCardItemProps> = ({ title, value, link }) => {
             {link ? <a href={link}>{value}</a> : value}
             <hr className='mb-2' />
         </>
-    )
-}
+    );
+};
 
-export default UserCardItem
+export default UserCardItem;

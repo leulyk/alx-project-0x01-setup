@@ -1,5 +1,5 @@
-import { UserProps } from '@/interfaces'
-import UserCardItem from './UserCardItem'
+import { UserProps } from '@/interfaces';
+import UserCardItem from './UserCardItem';
 
 const UserCard: React.FC<UserProps> = ({
     id,
@@ -11,9 +11,9 @@ const UserCard: React.FC<UserProps> = ({
     website,
     company,
 }) => {
-    const { street, suite, city, zipcode, geo } = address
-    const { lat, lng } = geo
-    const { name: companyName, catchPhrase, bs } = company
+    const { street, suite, city, zipcode, geo } = address;
+    const { lat, lng } = geo;
+    const { name: companyName, catchPhrase, bs } = company;
 
     return (
         <div className='mx-auto my-6 max-w-xl rounded-lg bg-white p-4 shadow-lg transition-shadow duration-300 hover:shadow-xl'>
@@ -59,7 +59,7 @@ const UserCard: React.FC<UserProps> = ({
                 />
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default UserCard
+export default UserCard;

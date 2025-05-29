@@ -1,9 +1,9 @@
-import UserCard from '@/components/common/UserCard'
-import Header from '@/components/layout/Header'
-import { UserProps } from '@/interfaces'
+import UserCard from '@/components/common/UserCard';
+import Header from '@/components/layout/Header';
+import { UserProps } from '@/interfaces';
 
 interface UsersPageProps {
-    posts: UserProps[]
+    posts: UserProps[];
 }
 
 const Users: React.FC<UsersPageProps> = ({ posts }) => {
@@ -48,18 +48,18 @@ const Users: React.FC<UsersPageProps> = ({ posts }) => {
                 </div>
             </main>
         </div>
-    )
-}
+    );
+};
 
 export async function getStaticProps() {
-    const response = await fetch('https://jsonplaceholder.typicode.com/users')
-    const users = await response.json()
+    const response = await fetch('https://jsonplaceholder.typicode.com/users');
+    const users = await response.json();
 
     return {
         props: {
             posts: users,
         },
-    }
+    };
 }
 
-export default Users
+export default Users;

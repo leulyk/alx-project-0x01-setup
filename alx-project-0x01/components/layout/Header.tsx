@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 const Header: React.FC = () => {
     return (
@@ -19,7 +19,7 @@ const Header: React.FC = () => {
                 </nav>
             </div>
         </header>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;

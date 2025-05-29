@@ -1,6 +1,5 @@
-
 const Button: React.FC = () => {
-    return (<></>)
+    return <></>
 }
 
 export default Button

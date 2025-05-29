@@ -1,18 +1,18 @@
-import { UserProps } from "@/interfaces"
+import { UserProps } from '@/interfaces'
 
 const UserCard: React.FC<UserProps> = () => {
-    return (<></>)
+    return <></>
 }
 
 export async function getStaticProps() {
-  const response = await fetch("https://jsonplaceholder.typicode.com/users")
-  const posts = await response.json()
+    const response = await fetch('https://jsonplaceholder.typicode.com/users')
+    const posts = await response.json()
 
-  return {
-    props: {
-      posts
+    return {
+        props: {
+            posts,
+        },
     }
-  }
 }
 
 export default UserCard

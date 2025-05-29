@@ -3,10 +3,10 @@ import Header from '@/components/layout/Header'
 import { UserProps } from '@/interfaces'
 
 interface UsersPageProps {
-    users: UserProps[]
+    posts: UserProps[]
 }
 
-const User: React.FC<UsersPageProps> = ({ users }) => {
+const Users: React.FC<UsersPageProps> = ({ posts }) => {
     return (
         <div className='flex h-screen flex-col'>
             <Header />
@@ -18,7 +18,7 @@ const User: React.FC<UsersPageProps> = ({ users }) => {
                     </button>
                 </div>
                 <div className='grid grid-cols-3 gap-2'>
-                    {users?.map(
+                    {posts.map(
                         (
                             {
                                 id,
@@ -57,9 +57,9 @@ export async function getStaticProps() {
 
     return {
         props: {
-            users,
+            posts: users,
         },
     }
 }
 
-export default User
+export default Users
